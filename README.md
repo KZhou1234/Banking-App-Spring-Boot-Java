@@ -1,1 +1,1 @@
-A Banking Application.
+A Banking Application with email alert, credit, debit transfer services.
