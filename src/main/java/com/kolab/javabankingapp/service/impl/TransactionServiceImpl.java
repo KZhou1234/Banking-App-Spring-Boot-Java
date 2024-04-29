@@ -4,9 +4,9 @@ import com.kolab.javabankingapp.dto.TransactionDto;
 import com.kolab.javabankingapp.entity.Transaction;
 import com.kolab.javabankingapp.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 
 public class TransactionServiceImpl implements TransactionService {
 

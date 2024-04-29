@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     TransactionService transactionService;
+
     @Override
     public BankResponse createAccount(UserRequest userRequest) {
         //check the existence
@@ -49,7 +50,7 @@ public class UserServiceImpl implements UserService{
         EmailDetails emailDetails = EmailDetails
                 .builder()
                 .recipient(savedUser.getEmail())
-                .subject("ACCOUNT REATION")
+                .subject("ACCOUNT CREATION")
                 .messageBody("Congratulations! Your account has been created!\n" +
                         "Your account details: \n" +
                         "Account Name: " + savedUser.getFirstName() + " " + savedUser.getLastName()
